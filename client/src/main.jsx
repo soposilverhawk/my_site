@@ -8,7 +8,7 @@ import { ApolloProvider } from "@apollo/client/react";
 import { CartProvider } from "./context/CartContext.jsx";
 import { PrefferedCurrencyProvider } from "./context/PrefferedCurrencyContext.jsx";
 
-// Создаем клиент Apollo с адресом твоего API через Cloudflare
+// Creation of Apollo client with the address of hosted backend with GraphQL API
 const client = new ApolloClient({
   link: new HttpLink({ 
     uri: "https://api.abracadabratp.xyz/graphql" 
