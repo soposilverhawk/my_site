@@ -26,9 +26,17 @@ docker-compose.yml -> Docker configuration file
 scandiweb_test.sql -> SQL dump (schema + product seed data)
 ```
 
+## 🌐 Access Points (Deployed)
+
+- **Frontend (Store):**
+  https://sopo.abracadabratp.xyz/all
+
+- **GraphQL API:**
+  https://api.abracadabratp.xyz/graphql (It's normal to see an error message there if opening through browser)
+
 ---
 
-## 🚀 Running the Project
+## 🚀 Running the Project locally with Docker
 
 Build and start all services:
 
@@ -50,7 +58,7 @@ This will start:
 
 ---
 
-## 🌐 Access Points
+## 🌐 Access Points (Docker)
 
 Once the project is running:
 
