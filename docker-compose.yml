@@ -1,0 +1,35 @@
+services:
+  db:
+    image: mariadb:10.4.32
+    restart: always
+    environment:
+      MARIADB_DATABASE: scandiweb
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    build: ./server
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./server:/var/www/html
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASS=root
+      - DB_NAME=scandiweb
+    depends_on:
+      - db
+
+  frontend:
+    build: ./client
+    ports:
+      - "8080:80"
+    restart: always
+    depends_on:
+      - backend
+
+volumes:
+  db_data:

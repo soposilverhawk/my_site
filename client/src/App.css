@@ -1,0 +1,21 @@
+:root {
+  /* color scheme */
+  --primary-color: #5ece7b;
+  --secondary-color: #1d1f22;
+  --tertiary-color: #a8acb030;
+  --out-of-stock-color: #8d8f9a;
+
+  /* typography */
+  --heading-main-size: 4.2rem;
+  --text-standard-size: 1.6rem;
+  --product-details-text: 1.8rem;
+  --out-of-stock-text-size: 2.4rem;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: #39374838;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
