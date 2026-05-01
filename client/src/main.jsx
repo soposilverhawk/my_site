@@ -8,10 +8,17 @@ import { ApolloProvider } from "@apollo/client/react";
 import { CartProvider } from "./context/CartContext.jsx";
 import { PrefferedCurrencyProvider } from "./context/PrefferedCurrencyContext.jsx";
 
+// Separation of development and production environment api uris
+const getApiUri = () => {
+  return window.location.hostname === "localhost"
+    ? "http://localhost:8000/graphql"
+    : "https://api.abracadabratp.xyz/graphql";
+};
+
 // Creation of Apollo client with the address of hosted backend with GraphQL API
 const client = new ApolloClient({
-  link: new HttpLink({ 
-    uri: "https://api.abracadabratp.xyz/graphql" 
+  link: new HttpLink({
+    uri: getApiUri(),
   }),
   cache: new InMemoryCache(),
 });
