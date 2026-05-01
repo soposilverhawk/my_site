@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a full-stack e-commerce application built as part of the Scandiweb assessment. It consists of a React frontend, a PHP backend exposing a GraphQL API, and a MySQL database, all containerized using Docker.
+This project is a full-stack e-commerce application built as part of the Scandiweb assessment. It consists of a React frontend, a PHP backend exposing a GraphQL API, and a MySQL database, all containerized using Docker and hosted via Cloudflare service, but can also be tested locally via Docker.
 
 The application supports product browsing, attribute-based selection, cart management, and order placement with persistent storage.
 
