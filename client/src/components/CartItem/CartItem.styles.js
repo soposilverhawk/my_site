@@ -15,6 +15,7 @@ export const CartItemContainer = styled.div`
 export const ItemInfoContainer = styled.div`
   ${flexColumn}
   gap: 1rem;
+  justify-content: center;
 `;
 
 export const ItemEssentialsContainer = styled.div`

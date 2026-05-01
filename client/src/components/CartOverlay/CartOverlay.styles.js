@@ -17,6 +17,7 @@ export const CartOverlayContainer = styled.div`
   @media (max-width: 768px) {
     max-width: 100%;
     padding: 3.2rem 0;
+    max-height: auto;
   }
 `;
 
@@ -34,7 +35,7 @@ export const CartItemsContainer = styled.div`
   flex-direction: column;
   gap: 4rem;
   overflow-y: auto;
-  overlofw-x: hidden;
+  overflow-x: hidden;
 
   /* Firefox */
   scrollbar-width: none;
@@ -46,6 +47,7 @@ export const CartItemsContainer = styled.div`
 
   @media (max-width: 768px) {
     padding: 0 2.4rem;
+    max-height: 20rem;
   }
 `;
 
@@ -62,4 +64,8 @@ export const CartTotalContainer = styled.div`
 
 export const EmptyCartMessage = styled.p`
   font-size: 1.4rem;
+
+  @media (max-width: 768px) {
+    padding: 0 2.4rem;
+  }
 `;
