@@ -63,7 +63,7 @@ This will start:
 Once the project is running:
 
 - **Frontend (Store):**
-  http://localhost:8080/category/all
+  http://localhost:8080/all
 
 - **GraphQL API:**
   http://localhost:8000/graphql
