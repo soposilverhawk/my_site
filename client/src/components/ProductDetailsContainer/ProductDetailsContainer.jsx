@@ -17,7 +17,9 @@ function ProductDetailsContainer({ variant, product }) {
   const parsedProductDescription = useParseHTML(product?.description);
   const [selectedAttributes, setSelectedAttributes] = useState({});
   const { cart, addToCart, setIsCartOpen } = useCart();
-  const isSelectedAttributesEmpty = Object.keys(selectedAttributes).length === 0;
+  const isSelectedAttributesEmpty =
+    product?.product_attributes?.length > 0 &&
+    Object.keys(selectedAttributes).length === 0;
 
   const handleAddToCart = () => {
     addToCart(product, selectedAttributes);
