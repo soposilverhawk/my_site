@@ -24,7 +24,7 @@ The backend is designed with the following principles:
 
 ### Language & Standards
 
-- PHP 8+
+- PHP 8.2+
 - PSR-1, PSR-4, PSR-12 compliance
 
 ### Architecture
