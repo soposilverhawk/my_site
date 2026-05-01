@@ -40,6 +40,7 @@ The application supports product browsing, category filtering, product detail vi
 - Cart management (quantity updates and item removal)
 - Order placement through GraphQL mutations
 - Persistent cart and order data via backend API
+- Responsive UI optimized for mobile as a bonus to base project requirements
 
 ---
 
