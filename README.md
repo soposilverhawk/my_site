@@ -70,7 +70,7 @@ Once the project is running:
 
 ---
 
-## 🗄️ Database Setup (Required)
+## 🗄️ Database Setup (Required if testing DB with Docker)
 
 The database is **not automatically seeded**.
 You must import the provided SQL dump manually.
