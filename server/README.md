@@ -65,7 +65,7 @@ The backend is designed with the following principles:
 ## Project Structure
 
 ```
-/bin/import.php               -> Database seeding script
+/bin/import.php               -> Database initial seeding script 
 /data/products.json           -> Source dataset provided by Scandiweb
 /public/index.php             -> Application entry point
 
